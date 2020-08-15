@@ -1,7 +1,3 @@
-/CDExchange-ejb/build/
-/CDExchange-ejb/dist/
-/CDExchangeBootstrap/build/
-
-
+/*/build/
+/*/dist/
 /*/nbproject/
-/CDExchange/build/
