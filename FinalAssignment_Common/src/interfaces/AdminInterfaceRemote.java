@@ -14,10 +14,6 @@ import entities.Rooms;
 import entities.RoomStatus;
 import entities.RoomTypes;
 
-/**
- *
- * @author Sunil
- */
 @Remote
 public interface AdminInterfaceRemote {
 

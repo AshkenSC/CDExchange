@@ -10,10 +10,7 @@ import java.util.List;
 import javax.ejb.Remote;
 
 
-/**
- *
- * @author Sunil Cyriac
- */
+
 
 @Remote
 public interface ManageCustInterfaceRemote{

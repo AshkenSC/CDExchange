@@ -13,10 +13,7 @@ import javax.faces.bean.ManagedBean;
 import javax.persistence.PersistenceContext;
 import interfaces.ManageCustInterfaceRemote;
 
-/**
- *
- * @author Sunil
- */
+
 
 //Criteria API query method is used here
 //referred from various sources including weekly tasks and stackoverflow

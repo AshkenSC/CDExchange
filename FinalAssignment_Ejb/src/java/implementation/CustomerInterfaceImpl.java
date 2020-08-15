@@ -21,10 +21,7 @@ import interfaces.CustomerInterfaceRemote;
 import java.util.Collection;
 import java.util.List;
 
-/**
- *
- * @author Sunil
- */
+
 
 //referred from various sources including weekly tasks and stackoverflow
 @ManagedBean(name = "CustomerInterfaceImpl")

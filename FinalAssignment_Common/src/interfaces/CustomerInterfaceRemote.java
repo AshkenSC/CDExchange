@@ -9,10 +9,7 @@ import java.util.Collection;
 import java.util.Date;
 import javax.ejb.Remote;
 
-/**
- *
- * @author Sunil
- */
+
 @Remote
 public interface CustomerInterfaceRemote {
 

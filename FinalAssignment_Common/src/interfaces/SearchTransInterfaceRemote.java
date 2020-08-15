@@ -10,10 +10,7 @@ import java.util.List;
 import javax.ejb.Remote;
 import entities.Transactions;
 
-/**
- *
- * @author Sunil
- */
+
 
 @Remote
 public interface SearchTransInterfaceRemote {

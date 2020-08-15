@@ -21,10 +21,7 @@ import entities.RoomStatus;
 import entities.RoomTypes;
 import interfaces.AdminInterfaceRemote;
 
-/**
- *
- * @author Sunil
- */
+
 
 //referred from various sources including weekly tasks and stackoverflow
 @Stateless

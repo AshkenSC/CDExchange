@@ -22,10 +22,7 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
-/**
- *
- * @author Batman
- */
+
 @Entity
 @Table(name = "CUSTOMERS")
 @XmlRootElement

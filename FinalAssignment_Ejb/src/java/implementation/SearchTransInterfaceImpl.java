@@ -16,10 +16,7 @@ import javax.persistence.Query;
 import entities.Transactions;
 import interfaces.SearchTransInterfaceRemote;
 
-/**
- *
- * @author Batman
- */
+
 //referred from various sources including weekly tasks and stackoverflow
 @Stateless
 public class SearchTransInterfaceImpl implements SearchTransInterfaceRemote{

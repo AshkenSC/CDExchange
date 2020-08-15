@@ -16,10 +16,7 @@ import entities.Rooms;
 import entities.RoomTypes;
 import interfaces.GuestInterfaceRemote;
 
-/**
- *
- * @author Sunil
- */
+
 //referred from various sources including weekly tasks and stackoverflow
 @Stateless
 @TransactionManagement(value=TransactionManagementType.CONTAINER)
