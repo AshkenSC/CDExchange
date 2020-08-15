@@ -22,19 +22,20 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author MECHREVO
  */
 @Entity
-@Table(name = "USERS")
-@XmlRootElement
+//@XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Users.findAll", query = "SELECT u FROM Users u")
-    , @NamedQuery(name = "Users.findByUserid", query = "SELECT u FROM Users u WHERE u.userid = :userid")
-    , @NamedQuery(name = "Users.findByUsername", query = "SELECT u FROM Users u WHERE u.username = :username")
-    , @NamedQuery(name = "Users.findByFirstName", query = "SELECT u FROM Users u WHERE u.firstName = :firstName")
-    , @NamedQuery(name = "Users.findByLastName", query = "SELECT u FROM Users u WHERE u.lastName = :lastName")
-    , @NamedQuery(name = "Users.findByEmail", query = "SELECT u FROM Users u WHERE u.email = :email")
-    , @NamedQuery(name = "Users.findByGender", query = "SELECT u FROM Users u WHERE u.gender = :gender")
-    , @NamedQuery(name = "Users.findByPassword", query = "SELECT u FROM Users u WHERE u.password = :password")
-    , @NamedQuery(name = "Users.findByPhone", query = "SELECT u FROM Users u WHERE u.phone = :phone")
-    , @NamedQuery(name = "Users.findByItemid", query = "SELECT u FROM Users u WHERE u.itemid = :itemid")})
+    @NamedQuery(name = "findAll", query = "SELECT u FROM Users u")
+    , @NamedQuery(name = "findUserByUserid", query = "SELECT u FROM Users u WHERE u.userid = :userid")
+    , @NamedQuery(name = "findUserByUsername", query = "SELECT u FROM Users u WHERE u.username = :username")
+    , @NamedQuery(name = "findUserByFirstName", query = "SELECT u FROM Users u WHERE u.firstName = :firstName")
+    , @NamedQuery(name = "findUserByLastName", query = "SELECT u FROM Users u WHERE u.lastName = :lastName")
+    , @NamedQuery(name = "findUserByEmail", query = "SELECT u FROM Users u WHERE u.email = :email")
+    , @NamedQuery(name = "findUserByGender", query = "SELECT u FROM Users u WHERE u.gender = :gender")
+    , @NamedQuery(name = "findUserByPassword", query = "SELECT u FROM Users u WHERE u.password = :password")
+    , @NamedQuery(name = "findUserByPhone", query = "SELECT u FROM Users u WHERE u.phone = :phone")
+    , @NamedQuery(name = "findUserByItemid", query = "SELECT u FROM Users u WHERE u.itemid = :itemid")
+})
+@Table(name = "USERS")
 public class Users implements Serializable {
 
     private static final long serialVersionUID = 1L;
