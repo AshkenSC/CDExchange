@@ -54,7 +54,7 @@ public class LoginView implements Serializable {
                 // user role check
                 this.userGroup = userEJB.findUserGroupByEmail(principal.getName());
 		if (userGroup.getGroupname().equals("user")) {
-                    return "/user/privatepage?faces-redirect=true";
+                    return "/user/user_privatepage?faces-redirect=true";
 		} 
                 else if (userGroup.getGroupname().equals("admin")) {
                     return "/admin/admin_privatepage?faces-redirect=true";
