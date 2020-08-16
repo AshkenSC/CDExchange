@@ -5,7 +5,7 @@
         <group>
             <file>file:/D:/Projects/semester3/5042/CDExchange/FIT5042FinalBootstrap/web/index.xhtml</file>
             <file>file:/D:/Projects/semester3/5042/CDExchange/FIT5042FinalBootstrap/web/regdone.xhtml</file>
-            <file>file:/D:/Projects/semester3/5042/CDExchange/FIT5042FinalBootstrap/web/user/privatepage.xhtml</file>
+            <file>file:/D:/Projects/semester3/5042/CDExchange/FIT5042FinalBootstrap/src/java/validators/EmailValidator.java</file>
             <file>file:/D:/Projects/semester3/5042/CDExchange/FIT5042FinalBootstrap/web/WEB-INF/web.xml</file>
             <file>file:/D:/Projects/semester3/5042/CDExchange/FIT5042FinalBootstrap/web/signin.xhtml</file>
             <file>file:/D:/Projects/semester3/5042/CDExchange/FIT5042FinalBootstrap/src/java/managedbeans/RegisterView.java</file>
