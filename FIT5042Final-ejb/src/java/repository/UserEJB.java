@@ -46,4 +46,16 @@ public class UserEJB {
 		}
 		return user;
 	}
+        public UserGroups findUserGroupByEmail(String email) {
+		TypedQuery<UserGroups> query = em.createNamedQuery("findUserGroupByEmail", UserGroups.class);
+		query.setParameter("email", email);
+		UserGroups userGroups = null;
+		try {
+			userGroups = query.getSingleResult();
+		} catch (Exception e) {
+			// getSingleResult throws NoResultException in case there is no user in DB
+			// ignore exception and return NULL for user instead
+		}
+		return userGroups;
+	}
 }

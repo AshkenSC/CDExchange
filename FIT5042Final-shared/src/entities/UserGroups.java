@@ -25,15 +25,15 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "USER_GROUPS")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "UserGroups.findAll", query = "SELECT u FROM UserGroups u")
-    , @NamedQuery(name = "UserGroups.findByUsergroupid", query = "SELECT u FROM UserGroups u WHERE u.usergroupid = :usergroupid")
-    , @NamedQuery(name = "UserGroups.findByEmail", query = "SELECT u FROM UserGroups u WHERE u.email = :email")
-    , @NamedQuery(name = "UserGroups.findByGroupname", query = "SELECT u FROM UserGroups u WHERE u.groupname = :groupname")})
+    @NamedQuery(name = "findAllUserGroups", query = "SELECT u FROM UserGroups u")
+    , @NamedQuery(name = "findUserGroupByUserGroupId", query = "SELECT u FROM UserGroups u WHERE u.usergroupid = :usergroupid")
+    , @NamedQuery(name = "findUserGroupByEmail", query = "SELECT u FROM UserGroups u WHERE u.email = :email")
+    , @NamedQuery(name = "findUserGroupByGroupName", query = "SELECT u FROM UserGroups u WHERE u.groupname = :groupname")})
 public class UserGroups implements Serializable {
 
     private static final long serialVersionUID = 1L;
     
-    public static final String USERS_GROUP = "admin";
+    public static final String USERS_GROUP = "user";
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

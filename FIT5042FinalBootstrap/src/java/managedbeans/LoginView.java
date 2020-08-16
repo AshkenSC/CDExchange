@@ -5,6 +5,7 @@
  */
 package managedbeans;
 
+import entities.UserGroups;
 import entities.Users;
 import java.io.Serializable;
 import java.security.Principal;
@@ -34,6 +35,7 @@ public class LoginView implements Serializable {
 	private String email;
 	private String password;
 	private Users user;
+        private UserGroups userGroup;
 	public String login() {
 		FacesContext context = FacesContext.getCurrentInstance();
 		HttpServletRequest request = (HttpServletRequest) context.getExternalContext().getRequest();
@@ -49,11 +51,22 @@ public class LoginView implements Serializable {
 		ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
 		Map<String, Object> sessionMap = externalContext.getSessionMap();
 		sessionMap.put("User", user);
-		if (request.isUserInRole("users")) {
-			return "/user/privatepage?faces-redirect=true";
-		} else {
+                // user role check
+                this.userGroup = userEJB.findUserGroupByEmail(principal.getName());
+		if (userGroup.getGroupname().equals("user")) {
+                    return "/user/privatepage?faces-redirect=true";
+		} 
+                else if (userGroup.getGroupname().equals("admin")) {
+                    return "/admin/admin_privatepage?faces-redirect=true";
+                }
+                else {
 			return "signin";
 		}
+//                if (request.isUserInRole("users")) {
+//			return "/user/privatepage?faces-redirect=true";
+//		} else {
+//			return "signin";
+//		}
 	}
 	public String logout() {
 		FacesContext context = FacesContext.getCurrentInstance();
