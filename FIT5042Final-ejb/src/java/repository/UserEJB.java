@@ -3,6 +3,7 @@ package repository;
 import entities.UserGroups;
 import entities.Users;
 import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.ejb.Stateless;
@@ -21,8 +22,8 @@ public class UserEJB {
 	
 	public Users createUser(Users user) {
 		try {
-			user.setPassword(AuthenticationUtils.encodeMD5(user.getPassword()));
-		} catch (UnsupportedEncodingException e) {
+			user.setPassword(AuthenticationUtils.encodeSHA256(user.getPassword()));
+		} catch (Exception e) {
 			Logger.getLogger(getClass().getName()).log(Level.SEVERE, null, e);
 			e.printStackTrace();
 		}

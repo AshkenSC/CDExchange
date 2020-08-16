@@ -28,7 +28,8 @@ import repository.UserEJB;
 public class LoginView implements Serializable {
 	private static final long serialVersionUID = 3254181235309041386L;
 	private static Logger log = Logger.getLogger(LoginView.class.getName());
-	@EJB
+	//@EJB
+        @Inject
 	private UserEJB userEJB;
 	private String email;
 	private String password;
